@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+<serverNames>
+  <servername>
+    <value>World 1</value>
+  </servername>
+  <autostart>
+    <value>true</value>
+  </autostart>
+</serverNames>

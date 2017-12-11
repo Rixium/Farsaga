@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+<options>
+  <musicvol>
+    <value>0.5</value>
+  </musicvol>
+  <effectvol>
+    <value>0.5</value>
+  </effectvol>
+</options>

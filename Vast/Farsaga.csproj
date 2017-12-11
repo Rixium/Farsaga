@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B28F3EA1-494E-4EE0-A5EF-E4EF24DE2AE1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Farsaga</RootNamespace>
+    <AssemblyName>Farsaga</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Potte\Desktop\ClientTest2\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://www.farsaga.com/ClientTest2/</InstallUrl>
+    <TargetCulture>en-GB</TargetCulture>
+    <ProductName>FarsagaClient</ProductName>
+    <PublisherName>Rixium</PublisherName>
+    <SuiteName>Farsaga</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>index.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>23</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>gameicon_lr4_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BC18DEB7DAB4B41CE00B7E1672F38F275443EBDB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Farsaga_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>FarsagaSign.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Config\AnimationStates.cs" />
+    <Compile Include="Config\CharacterSelections.cs" />
+    <Compile Include="Config\ChatColors.cs" />
+    <Compile Include="Config\CheckConstants.cs" />
+    <Compile Include="Config\EnemyInfo.cs" />
+    <Compile Include="Config\EnemyTypes.cs" />
+    <Compile Include="Config\GameManager.cs" />
+    <Compile Include="Config\KeyCodes.cs" />
+    <Compile Include="Config\MessageCodes.cs" />
+    <Compile Include="Config\PlayerInfo.cs" />
+    <Compile Include="Config\PlayerType.cs" />
+    <Compile Include="Config\ServerInfo.cs" />
+    <Compile Include="Config\ServerPackets.cs" />
+    <Compile Include="Config\ServerRoles.cs" />
+    <Compile Include="Config\Strings.cs" />
+    <Compile Include="Constants\ButtonTag.cs" />
+    <Compile Include="Constants\FacingDirections.cs" />
+    <Compile Include="Constants\GameConstants.cs" />
+    <Compile Include="Constants\GameOptions.cs" />
+    <Compile Include="Constants\InfoType.cs" />
+    <Compile Include="Constants\MenuTag.cs" />
+    <Compile Include="Constants\ScreenType.cs" />
+    <Compile Include="Constants\TextPosition.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="GameClasses\EnemyClasses\Enemy.cs" />
+    <Compile Include="GameClasses\EnemyClasses\EnemyStats.cs" />
+    <Compile Include="GameClasses\MapClasses\Entity.cs" />
+    <Compile Include="GameClasses\MapClasses\Map.cs" />
+    <Compile Include="GameClasses\MapClasses\Tile.cs" />
+    <Compile Include="GameClasses\MapClasses\TiledMap.cs" />
+    <Compile Include="GameClasses\PlayerClasses\Player.cs" />
+    <Compile Include="GameClasses\PlayerClasses\PlayerAttack.cs" />
+    <Compile Include="GameClasses\PlayerClasses\PlayerStats.cs" />
+    <Compile Include="MenuClasses\Menu.cs" />
+    <Compile Include="MenuClasses\MenuBackground.cs" />
+    <Compile Include="MenuClasses\PauseMenu.cs" />
+    <Compile Include="MenuClasses\ServerBrowser.cs" />
+    <Compile Include="MenuClasses\ServerItem.cs" />
+    <Compile Include="MenuClasses\ServerList.cs" />
+    <Compile Include="Network\NetworkDataHandler.cs" />
+    <Compile Include="Network\NetworkHandler.cs" />
+    <Compile Include="Network\Packets\OpenedPacket.cs" />
+    <Compile Include="Network\Packets\PlayerPacket.cs" />
+    <Compile Include="Network\Packets\ChatPacket.cs" />
+    <Compile Include="Network\Packets\PositionPacket.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenClasses\GameScreen.cs" />
+    <Compile Include="ScreenClasses\MenuScreen.cs" />
+    <Compile Include="ScreenClasses\Screen.cs" />
+    <Compile Include="Util\Animation.cs" />
+    <Compile Include="Util\Button.cs" />
+    <Compile Include="Util\Camera\Camera2D.cs" />
+    <Compile Include="Util\ContentChest.cs" />
+    <Compile Include="Util\KeyInput.cs" />
+    <Compile Include="Util\MouseOverInfo.cs" />
+    <Compile Include="Util\Resolution.cs" />
+    <Compile Include="Util\TextArea.cs" />
+    <Compile Include="Util\Textbox.cs" />
+    <Compile Include="Windows\ChatBox.cs" />
+    <Compile Include="Windows\ChatHolder.cs" />
+    <Compile Include="Windows\UserInterface.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Lidgren.Network, Version=3.6.0.1625, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Potte\Desktop\Lidgren-network-gen3\Lidgren.Network\bin\Debug\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MonoGame.Extended">
+      <HintPath>Referencees\MonoGame.Extended.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.Graphics">
+      <HintPath>Referencees\MonoGame.Extended.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.Tiled">
+      <HintPath>Referencees\MonoGame.Extended.Tiled.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>Referencees\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gameicon_lr4_icon.ico" />
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+    <None Include="app.manifest" />
+    <None Include="FarsagaSign.pfx" />
+    <None Include="Farsaga_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Content\options.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
